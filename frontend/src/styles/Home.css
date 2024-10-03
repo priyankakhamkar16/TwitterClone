@@ -1,0 +1,85 @@
+/* Home.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.left-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter-logo {
+  width: 100%; /* Ensure it takes up full available width */
+  max-width: 500px; /* Adjust this size if necessary */
+  height: auto;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
+}
+
+.right-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.right-content h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: background-color 0.3s ease;
+  border: 2px solid white;
+  width: 200px;
+}
+
+.signup-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+
+.signin-btn {
+  background-color: transparent;
+}
+
+.signup-btn:hover, .signin-btn:hover {
+  background-color: #1DA1F2;
+  color: white;
+}

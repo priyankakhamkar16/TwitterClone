@@ -1,0 +1,207 @@
+/* Layout */
+.main-page {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-twitter-logo {
+  width: 50px;
+  height: auto;
+}
+
+/* Sidebar navigation */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li svg {
+  margin-right: 10px;
+}
+
+.sidebar li:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* Sidebar Tweet button */
+.post-button-sidebar {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.post-button-sidebar:hover {
+  background-color: #0d8ecf;
+}
+
+/* Main feed */
+.feed {
+  flex: 1;
+  padding: 20px;
+  background-color: #15202B;
+  color: white;
+  overflow-y: auto;
+}
+
+/* Tab button styles */
+.home-tabs, .explore-tabs {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px;
+  background-color: #15202B;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  color: white;
+}
+
+.tab-button.active {
+  border-bottom: 2px solid #1DA1F2;
+}
+
+.tab-button:hover {
+  background-color: #1E2732;
+}
+
+/* Post (Tweet) styles */
+.post {
+  background-color: #192734;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.post p {
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.post span {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #8899A6;
+}
+
+/* Media Container Styles */
+.tweet-media {
+  max-width: 50%; /* Further reduced media width */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+/* Specific styles for images */
+.tweet-media img {
+  width: 100%;
+  height: 150px; /* Further reduced height for images */
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Specific styles for videos */
+.tweet-media video {
+  width: 100%;
+  height: 150px; /* Further reduced height for videos */
+  border-radius: 10px;
+  margin-top: 10px;
+  object-fit: cover;
+}
+
+/* Adjustments for only 'For You' section */
+.posts.foryou .tweet-media {
+  max-width: 40%; /* Further reduced width for the 'For You' section */
+  height: 120px; /* Further reduced height */
+}
+
+/* Style for video placeholder */
+.video-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px; /* Further reduced placeholder height */
+  background-color: #1E2732;
+  border-radius: 10px;
+  color: #8899A6;
+  font-size: 16px;
+  border: 2px dashed #1DA1F2;
+  margin-top: 10px;
+}
+
+
+/* Ensure a clear distinction for media within the post */
+.post-media {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #192734;
+  border-radius: 10px;
+}
+
+/* Ensure the feed area and tweets are clearly visible */
+.posts {
+  padding: 20px;
+  background-color: #15202B;
+  color: white;
+}
+
+/* Profile Menu styles */
+.profile-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 10;
+}
+
+.profile-menu li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.profile-menu li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
