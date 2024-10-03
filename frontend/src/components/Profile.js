@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Profile.css';
 
@@ -48,6 +50,7 @@ const Profile = () => {
   return (
     <div className="profile-page">
       <div className="profile-header">
+        <FontAwesomeIcon icon={faUser} className="profile-icon" />
         <h2>{user.username}</h2>
       </div>
       <div className="profile-info">
