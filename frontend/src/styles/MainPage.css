@@ -205,3 +205,39 @@
 .profile-menu li:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+
+/* Following section styles */
+.user-card {
+  background-color: #192734;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.user-card span {
+  font-size: 16px;
+}
+
+.user-card button {
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user-card button:hover {
+  background-color: #0d8ecf;
+}
+
+.user-card button:focus {
+  outline: none;
+  background-color: #1DA1F2;
+}
